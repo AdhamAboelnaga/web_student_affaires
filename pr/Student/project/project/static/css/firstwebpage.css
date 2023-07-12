@@ -1,0 +1,68 @@
+a.active {
+    background-color: #ECFFD6;
+}
+
+.icon-bar {
+    width: 87%;
+    background-color: #FFF892;
+    overflow: auto;
+
+}
+
+.icon-bar a {
+    float: left;
+    width: 16%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: #A90D0D;
+    font-size: 36px;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+
+
+}
+
+.icon-bar a:hover {
+    background-color: #ffad5b;
+    color: #228C00;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    color: #A90D0D;
+
+}
+
+button {
+    background-color: #FFF892;
+    border-color: #A90D0D;
+    border-width: 3px;
+}
+
+body {
+    background-color: #ECFFD6;
+    margin: 0;
+}
+
+a.active {
+    background-color: #ECFFD6;
+}
+
+div {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #A90D0D;
+
+}
+
+.bar {
+    top: 2px;
+    right: 2px;
+}

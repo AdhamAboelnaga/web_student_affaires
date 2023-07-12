@@ -1,0 +1,74 @@
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>AllStudentInfo</title>
+    <link rel="stylesheet" href="{% static 'CSS/infopage (1).css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="st.png">
+    <script src="{% static 'js/java.js' %}"></script>
+</head>
+
+<body>
+    <a class="active" href="{% url 'first' %}"> <img
+            style=" float: left; height: 180px; width:180px; display: inline-block; "
+            src="data:image/jpeg;base64,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">
+    </a>
+    <br>
+    <div class="icon-bar">
+
+        <a href="{% url 'Home' %}"><i class="fa fa-home" style="font-size:24px; margin: 6px;"></i>Home</a>
+        <a href="{% url 'add' %}"><i class="fa fa-plus-square" style="font-size:24px; margin: 6px;"></i>Add Student</a>
+        <a class="active" href="{% url 'view' %}"><i class="fa fa-file-text"
+                style="font-size:24px; margin: 6px;"></i>View All
+            Students</a>
+
+        <a href="{% url 'dept' %}"><i class="fa fa-search-plus" style="font-size:24px; margin: 6px;"></i>
+            department</a>
+        <a href="{% url 'search' %}"><i class="fa fa-search-plus" style="font-size:24px; margin: 6px;"></i>Search
+           </a>
+        <a href="{% url 'logout' %}"><i class="fa fa-sign-out" style="font-size:24px; margin: 6px;"></i>Logout</a>
+    </div><br><br><br><br><br><br>
+    <!-- <input type="text" placeholder="Search"><button>SEARCH</button> -->
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Name">
+    <br><br>
+
+
+    <table id="info">
+        <tr class="header">
+            <th>Student Name</th>
+            <th>Student ID</th>
+            <th>Student GPA</th>
+            <th>
+                Student Level</th>
+            <th>
+                Student Active
+            </th>
+        </tr>
+        {% for a in stu %}
+        <tr>
+            <td align="center"><strong>{{a.Name}}</strong></td>
+            <td align="center"><strong>{{a.id}}</strong></td>
+            <td align="center"><strong>{{a.GPA}}</strong></td>
+            <td align="center"><strong>{{a.level}}</strong></td>
+            <td align="center"><strong>{{a.status}}</strong></td>
+            <td width="10"> <form><button type="submit" formaction="{% url 'EditStudent' a.id %} " style="padding: 10px;">update</button></form></td></td>
+            {% csrf_token %}
+            <td> <button class="btn" type="button" onclick = "DeleteStudentView({{a.id}},this)"> Delete this student</button></td>
+        
+           
+        </tr>
+        {% endfor %}
+        
+    </table>
+    <br>
+
+</body>
+
+</html>
+
+{% endblock content %}

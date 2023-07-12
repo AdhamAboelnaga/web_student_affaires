@@ -1,0 +1,30 @@
+body {
+    background-color: #ECFFD6;
+
+
+}
+
+a {
+    background-color: #FFF892;
+    border-color: #A90D0D;
+    border-radius: 200px;
+    width: 300px;
+    font-weight: bold;
+    color: #A90D0D;
+    padding: 10px 20px;
+    font-size: 40px;
+    margin: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+
+
+h1 {
+    color: #A90D0D;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+}
